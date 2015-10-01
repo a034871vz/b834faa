@@ -23,5 +23,5 @@ printf("Vvedite a ");
 scanf ("%f", &a);
 Y=atan(45*a*a-79*a*x+30*x*x);
 printf("Y=%f\n\n", Y);
-retutn 0;
+return 0;
 }
