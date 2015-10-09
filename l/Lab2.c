@@ -25,6 +25,7 @@ printf("Vvedite a ");
 scanf ("%fl", &a);
 m=45*a*a-79*a*x+30*x*x;                                //Вычисление значения m
 if (m>=-1 && m<=1){Y=atan(m);printf("Y=%fl\n\n", Y);}   //если m от -1 до 1, то вычислять и выводить Y
-else{printf("Neudovletvorjaet znacheniu k\n\n");}            //если m любое другое значение, то выводить текст
+else{printf("Neudovletvorjaet znacheniu k\n\n");} //если m любое другое значение, то выводить текст
+printf("Y=%f\n\n",Y);
 return 0;
 }
