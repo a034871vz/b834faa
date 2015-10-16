@@ -8,10 +8,9 @@ int main()
   scanf ("%fl", &x);
   printf("Vvedite a ");
   scanf ("%fl", &a);
-  m=(10*a*a+11*a*x+3*x*x);                    //Вычисление значение m
-  if (m!=0){G=-5*(-2*a*a+a*x+3*x*x)/m;printf("G=%fl\n\n", G);} //если m не равно 0, то вычислять и выводить G
-  else{printf("Neudovletvorjaet znacheniu m\n\n");}            //если m любое другое значение, то выводить текст
-  printf("G=%fl\n\n", G);
+  m=(10*a*a+11*a*x+3*x*x);                                        //Вычисление значение m
+    if (m!=0){G=-5*(-2*a*a+a*x+3*x*x)/m;printf("G=%fl\n\n", G);} //если m не равно 0, то вычислять и выводить G
+    else{printf("Neudovletvorjaet znacheniu m\n\n");}            //если m любое другое значение, то выводить текст
   
   printf("Vvedite x ");
   scanf ("%fl", &x);
@@ -25,9 +24,9 @@ int main()
   scanf ("%fl", &x);
   printf("Vvedite a ");
   scanf ("%fl", &a);
-  m=45*a*a-79*a*x+30*x*x;                                           //Вычисление значения m
-    if (m>=-1 && m<=1){Y=atan(m);printf("Y=%fl\n\n", Y);}         //если m от -1 до 1, то вычислять и выводить Y
-    else{printf("Neudovletvorjaet znacheniu k\n\n");}             //если m любое другое значение, то выводить текст
+  n=45*a*a-79*a*x+30*x*x;                                           //Вычисление значения m
+    if (n>=-1 && n<=1){Y=atan(m);printf("Y=%fl\n\n", Y);}         //если n от -1 до 1, то вычислять и выводить Y
+    else{printf("Neudovletvorjaet znacheniu k\n\n");}             //если n любое другое значение, то выводить текст
   printf("Y=%f\n\n",Y);
   return 0;
 }
