@@ -1,31 +1,36 @@
-#include <stdio.h>
-#include <math.h>
-int main()
-{
-  double a,x,G,F,Y;
-  int k,m;
-  printf("Vvedite x: ");
-  scanf ("%fl", &x);
-  printf("Vvedite a ");
-  scanf ("%fl", &a);
-  G=-5*(-2*a*a+a*x+3*x*x)/(10*a*a+11*a*x+3*x*x);                   //Вычисление значения G
-  printf("G=%fl\n\n", G);
-  
-  printf("Vvedite x ");
-  scanf ("%fl", &x);
-  printf("Vvedite a ");
-  scanf ("%fl", &a);
-  k=10*a*a-7*a*x+x*x;                                              //Вычисление значения k
-       if (k>=-1 && k<=1){F=sin(k);printf("F=%fl\n\n", F);}         //если k от -1 до 1, то вычислять и выводить F
-       else{printf("Neudovletvorjaet znacheniu k\n\n");}            //если k любое другое значение, то выводить текст
-  
-  printf("Vvedite x ");
-  scanf ("%fl", &x);
-  printf("Vvedite a ");
-  scanf ("%fl", &a);
-  m=45*a*a-79*a*x+30*x*x;                                           //Вычисление значения m
-    if (m>=-1 && m<=1){Y=atan(m);printf("Y=%fl\n\n", Y);}         //если m от -1 до 1, то вычислять и выводить Y
-    else{printf("Neudovletvorjaet znacheniu k\n\n");}             //если m любое другое значение, то выводить текст
-  printf("Y=%f\n\n",Y);
-  return 0;
-}
+-#include <stdio.h>
+-#include <math.h>
+-int main()
+-{
+-  double a,x,G,F,Y,m,n,k;
+-  int s;
+-  printf("Vvedite x: ");
+-  scanf ("%fl", &x);
+-  printf("Vvedite a ");
+-  scanf ("%fl", &a);
+   printf("/n Viberete znachenie: \n\"1\" for G\n\"2\" for F\n\"3\" for Y\n");
+-   m=(10*a*a+11*a*x+3*x*x);                                        //Вычисление значение m
+-   n=10*a*a-7*a*x+x*x;                                             //Вычисление значения n
+-   k=45*a*a-79*a*x+30*x*x                                          //Вычисление значение k
+
+    switch(s){
+      case 1:
+            if (m!=0) {                                             //Условие m
+              G=-5*(-2*a*a+a*x+3*x*x)/m;                            //Вычисление значение G
+              print("%fl",G);}
+            else printf("Neudovletvorjaet usloviu.\n");
+            break;
+      case 2:
+            if (n>=-1 && n<=1){                                     //Условие n
+              F=sin(n);                                             //Вычисление значение F
+              print ("%fl",F);}
+            else printf("Neudovletvorjaet usloviu.\n");
+            break;
+      case 3:
+            if (k>=-1 && k<=1){                                     //Условие k
+              Y=atan(k);                                            //Вычисление значение Y
+              print ("%fl",Y);}
+            else printf("Neudovletvorjaet usloviu.\n");
+            break;
+-  return 0;
+-}
