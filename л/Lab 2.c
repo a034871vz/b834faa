@@ -3,12 +3,14 @@
 int main()
 {
   double a,x,G,F,Y;
-  int k,m;
+  int k,m,n;
   printf("Vvedite x: ");
   scanf ("%fl", &x);
   printf("Vvedite a ");
   scanf ("%fl", &a);
-  G=-5*(-2*a*a+a*x+3*x*x)/(10*a*a+11*a*x+3*x*x);                   //Вычисление значения G
+  m=(10*a*a+11*a*x+3*x*x);                    //Вычисление значение m
+  if (m!=0){G=-5*(-2*a*a+a*x+3*x*x)/m;printf("G=%fl\n\n", G);} //если m не равно 0, то вычислять и выводить G
+  else{printf("Neudovletvorjaet znacheniu m\n\n");}            //если m любое другое значение, то выводить текст
   printf("G=%fl\n\n", G);
   
   printf("Vvedite x ");
